@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <PackageLicenseFile>MIT.md</PackageLicenseFile>
+    <Authors>JpMitri</Authors>
+    <Description>Library For Using Amazon S3 To Upload Or Delete a File In your Bucket Using .Net 6 C#9</Description>
+    <Copyright>JpMitri</Copyright>
+    <PackageReleaseNotes>Library For Using Amazon S3 To Upload Or Delete a File In your Bucket Using .Net 5 C#9</PackageReleaseNotes>
+    <NeutralLanguage>en</NeutralLanguage>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.4.0</Version>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
+    <FileVersion>1.0.4.0</FileVersion>
+    <AssemblyOriginatorKeyFile>JpMitri.pfx</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <ApplicationIcon>JP Mitri Logo.ico</ApplicationIcon>
+    <PackageIcon>JP Mitri Logo.png</PackageIcon>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\jpmit\OneDrive\Oussama\AWS\S3\AWS_S3\AWS_S3\AWS_S3.xml</DocumentationFile>
+    <OutputPath>C:\Users\jpmit\OneDrive\Oussama\AWS\S3\Publish\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.12.9" />
+    <PackageReference Include="AWSSDK.S3" Version="3.7.9.25" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Publish\MIT.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="F:\Jp Info\JP Mitri Logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

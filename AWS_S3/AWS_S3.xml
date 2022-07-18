@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWS_S3</name>
+    </assembly>
+    <members>
+        <member name="T:AWS_S3.S3">
+            <summary>
+            This Code Is To Help You Implement Amazon S3 With Almost No Hassle
+            </summary>
+        </member>
+        <member name="T:AWS_S3.S3.Enum_Region">
+            <summary>
+            The Amazon Region Where Your Server Exists
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.USEast1">
+            <summary>
+            The US East (Virginia) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.AFSouth1">
+            <summary>
+            The Africa (Cape Town) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.MESouth1">
+            <summary>
+            The Middle East (Bahrain) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.CACentral1">
+            <summary>
+            The Canada (Central) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.CNNorthWest1">
+            <summary>
+            The China (Ningxia) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.CNNorth1">
+            <summary>
+            The China (Beijing) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.USGovCloudWest1">
+            <summary>
+            The US GovCloud West (Oregon) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.SAEast1">
+            <summary>
+            The South America (Sao Paulo) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.APSoutheast2">
+            <summary>
+            The Asia Pacific (Sydney) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.APSoutheast1">
+            <summary>
+            The Asia Pacific (Singapore) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.APSouth1">
+            <summary>
+            The Asia Pacific (Mumbai) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.APNortheast3">
+            <summary>
+            The Asia Pacific (Osaka-Local) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.USGovCloudEast1">
+            <summary>
+            The US GovCloud East (Virginia) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.APNortheast1">
+            <summary>
+            The Asia Pacific (Tokyo) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.APNortheast2">
+            <summary>
+            The Asia Pacific (Seoul) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.USWest1">
+            <summary>
+            The US West (N. California) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.USWest2">
+            <summary>
+            The US West (Oregon) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.EUNorth1">
+            <summary>
+            The EU North (Stockholm) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.EUWest1">
+            <summary>
+            The EU West (Ireland) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.USEast2">
+            <summary>
+            The US East (Ohio) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.EUWest3">
+            <summary>
+            The EU West (Paris) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.EUCentral1">
+            <summary>
+            The EU Central (Frankfurt) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.EUSouth1">
+            <summary>
+            The Europe (Milan) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.APEast1">
+            <summary>
+            The Asia Pacific (Hong Kong) endpoint.
+            </summary>
+        </member>
+        <member name="F:AWS_S3.S3.Enum_Region.EUWest2">
+            <summary>
+            The EU West (London) endpoint.
+            </summary>
+        </member>
+        <member name="M:AWS_S3.S3.#ctor(System.String,System.String,System.String,AWS_S3.S3.Enum_Region)">
+            <summary>
+            Initialize The Instance Of S3
+            <example>
+            <para>For Example:</para>
+            <code>
+            S3 aws = new AWS_S3.S3("Bucket1", "ABC123", "123ABC!@#",S3.Enum_Region.MESouth1);
+            </code>
+            </example>
+            </summary>
+            <param name="bucket_Name">The Name Of Your Amazon S3 Bucket Also Known As Main Directory</param>
+            <param name="awsAccessKeyId">The Access Key ID Given To You By Amazon</param>
+            <param name="awsSecretAccessKey">The Secret Access Key Given To You By Amazon</param>
+            <param name="region">The Region Where Your Bucket Resides</param>
+        </member>
+        <member name="M:AWS_S3.S3.Delete_S3_Item(System.String,System.String)">
+            <summary>
+            Deletes The Item From The Given Bucket
+            <para>NB: In S3 You Specify the Path Like This Folder1/Folder2/</para>
+            <example><para>For Example:</para>
+            <para>My File Is In The Sub Directory Files/App01</para>
+            <code>
+            Delete_S3_Item("Test.jpg","Files/App01/")
+            </code>
+            </example>
+            </summary>
+            <param name="File_Name">The Name Of The File You Want To Delete.</param>
+            <param name="Folder_Path">The Folder Tree For The Given File.</param>
+            <returns>True If The Object Was Deleted Successfully</returns>
+        </member>
+        <member name="M:AWS_S3.S3.Upload_AWS(System.String,System.String)">
+            <summary>
+            Uploads A File To Your Amazon Bucket With <c>Public Read Permission</c>
+            <para>NB: In S3 You Specify The Path Like This Folder1/Folder2/</para>
+            <example>For Example:
+            <para>
+            I Want To Upload The File Under "C" Named "img1.jpg" To "My_Bucket/Webimages/TestFolder1"
+            </para>
+            <code>
+            Upload_AWS(@"C:\img1.jpg", "Webimages/TestFolder1/");
+            </code>
+            </example>
+            </summary>
+            <param name="File_Location">The Current Path Of The File To Upload</param>
+            <param name="Save_Under_Path">The Path In The Bucket Under Which The File Is Saved</param>
+            <returns>The URL Where You Can Find The File You Just Uploaded</returns>
+        </member>
+    </members>
+</doc>

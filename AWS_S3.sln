@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWS_S3", "AWS_S3\AWS_S3.csproj", "{00A6C68E-4258-48C7-AB77-6B32E7089E6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unit_Test", "ConsoleApp1\Unit_Test.csproj", "{89A82B21-A862-4AB3-9747-1B41B0B0E237}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00A6C68E-4258-48C7-AB77-6B32E7089E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A6C68E-4258-48C7-AB77-6B32E7089E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A6C68E-4258-48C7-AB77-6B32E7089E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A6C68E-4258-48C7-AB77-6B32E7089E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A82B21-A862-4AB3-9747-1B41B0B0E237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A82B21-A862-4AB3-9747-1B41B0B0E237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A82B21-A862-4AB3-9747-1B41B0B0E237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A82B21-A862-4AB3-9747-1B41B0B0E237}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {070CC37F-9768-47C9-A455-CBCE5108DB24}
+	EndGlobalSection
+EndGlobal
