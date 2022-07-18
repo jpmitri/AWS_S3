@@ -20,6 +20,7 @@
     <AnalysisLevel>latest</AnalysisLevel>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/jpmitri/AWS_S3</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
